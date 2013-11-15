@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c6076d;
+    background-image: url('bg-grilled.jpg');
+    color: #ffffff;
+    width: 960px;
+    margin: auto;
+    font-family: 'Museo-300';
+    font-weight: 300;
+    font-size: 14pt;
+    margin-bottom: 10em;
+}
+
+h1 {
+    font-family: 'Governor';
+    font-size: 137pt;
+    font-weight: normal;
+    text-shadow: 
+        4px 4px 0px #c6076d, 
+        5px 5px 0px #ffffff;
+    margin-bottom: 0em;
+}
+
+h2 {
+    font-family: 'Governor';
+    font-size: 60pt;
+    font-weight: normal;
+    text-shadow: 
+        2px 2px 0px #c6076d, 
+        3px 3px 0px #ffffff;
+}
+
+h3 {
+    font-family: 'Governor';    
+    font-weight: normal;
+    padding-bottom: 2px;
+    border-bottom: 5px solid #ffffff;
+}
+
+.partenariat {
+    width: 730px;
+}
+.partenariat h2 {
+    margin-bottom: 0;
+}
+.partenariat h3 {
+    display: inline-block;
+    margin: 0;
+}
+.partenariat p {
+    text-align: justify;
+}
+
+.projets h2 {
+    margin-bottom: 0.2em;
+    text-align: right;
+    font-family: 'Governor';
+}
+
+.infos-pratiques {
+
+}
+.subtitle {
+    background: white;
+    color: #c6076d;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 1em;
+}
+.subtitle p {
+    margin: 0;
+}
+
+.down {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background: #ffffff;
+    color: #c6076d;
+    text-align: center;
+    padding-top: 1em;
+    -webkit-transform: rotate(90deg);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 span {
+    display: inline-block;
+}
+.title-underline {
+    border-bottom: 30px solid #ffffff;
+}
+
+nav {
+    margin: 5em 0 1em 0;
+}
+nav h2 {
+    float: left;
+    font-family: 'Governor';
+    font-size: 60pt;
+    margin: 0;
+    margin-top: 0.15em;
+    padding: 0;
+    font-weight: normal;
+    text-shadow: 
+        3px 3px 0px #c6076d, 
+        4px 4px 0px #ffffff;
+}
+
+nav ul,
+nav li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+nav ul {
+    margin-left: 300px;
+}
+nav li {
+    border-bottom: dotted 1px #ffffff;
+    padding: 0.3em 0 0.3em 0;
+}
+nav li:last-child {
+    border-bottom: 0;
+}
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+.row {}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.slot, .separateur {
+    float: left;
+}
+.slot {
+    width: 306px;
+    height: 306px;
+    background: rgba(255, 255, 255, 0.5);
+    margin-right: 21px;
+    cursor: pointer;
+    padding: 2em;
+}
+.slot:last-child{
+    margin-right: 0;
+}
+.slot:only-child {
+    margin-left: 327px;
+}
+.separateur {
+    width: 21px;
+    height: 21px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: 306px;
+    text-align: center;
+    font-size: 21px;
+}
+
+.titre {
+    font-family: 'Governor';
+    font-size: 35pt;
+    font-weight: normal;
+    padding-top: 1.5em;
+/*     text-shadow: 
+    2px 2px 0px #c6076d, 
+    3px 3px 0px #ffffff; */
+    border-bottom: 8px solid white;
+}
+
+.auteur {
+    text-transform: uppercase;
+    padding: 1em 0 0.3em 0;
+}
+
+.infos {
+    font-style: italic;
+}
