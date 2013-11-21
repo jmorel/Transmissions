@@ -1,189 +1,177 @@
 * {
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
 }
 
 body {
-    background-color: #c6076d;
-    background-image: url('bg-grilled.jpg');
-    color: #ffffff;
-    width: 960px;
-    margin: auto;
-    font-family: 'Museo-300';
-    font-weight: 300;
-    font-size: 14pt;
-    margin-bottom: 10em;
+  font-family: monospace;
+  font-size: 14pt;
+  background: url("travaux eleves/DSCF6493.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
-h1 {
-    font-family: 'Governor';
-    font-size: 137pt;
-    font-weight: normal;
-    text-shadow: 
-        4px 4px 0px #c6076d, 
-        5px 5px 0px #ffffff;
-    margin-bottom: 0em;
+header {
+  background: url("cross.png");
+  padding: 0 0 2em 0;
 }
 
-h2 {
-    font-family: 'Governor';
-    font-size: 60pt;
-    font-weight: normal;
-    text-shadow: 
-        2px 2px 0px #c6076d, 
-        3px 3px 0px #ffffff;
+header h1 {
+  width: 960px;
+  padding: 0.33em 0 0em 0;
+  margin: 0 auto 0 auto;
+  color: white;
+  font-family: 'Governor';
+  font-size: 79pt;
+  /*text-shadow: 
+      1px 1px 0 black,
+      1px -1px 0 black,
+      -1px -1px 0 black,
+      -1px 1px 0 black;*/
 }
 
-h3 {
-    font-family: 'Governor';    
-    font-weight: normal;
-    padding-bottom: 2px;
-    border-bottom: 5px solid #ffffff;
-}
-
-.partenariat {
-    width: 730px;
-}
-.partenariat h2 {
-    margin-bottom: 0;
-}
-.partenariat h3 {
-    display: inline-block;
-    margin: 0;
-}
-.partenariat p {
-    text-align: justify;
-}
-
-.projets h2 {
-    margin-bottom: 0.2em;
-    text-align: right;
-    font-family: 'Governor';
-}
-
-.infos-pratiques {
-
-}
-.subtitle {
-    background: white;
-    color: #c6076d;
-    height: 30px;
-    line-height: 30px;
-    padding-left: 1em;
-}
-.subtitle p {
-    margin: 0;
-}
-
-.down {
-    width: 70px;
-    height: 70px;
-    border-radius: 35px;
-    background: #ffffff;
-    color: #c6076d;
-    text-align: center;
-    padding-top: 1em;
-    -webkit-transform: rotate(90deg);
-    margin-left: auto;
-    margin-right: auto;
-}
-
-h1 span {
-    display: inline-block;
-}
-.title-underline {
-    border-bottom: 30px solid #ffffff;
+header .subtitle {
+  margin: 0 auto 0 auto;
+  width: 960px;
+  font-size: 14pt;
+  background: white;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border-radius: 4px;
 }
 
 nav {
-    margin: 5em 0 1em 0;
-}
-nav h2 {
-    float: left;
-    font-family: 'Governor';
-    font-size: 60pt;
-    margin: 0;
-    margin-top: 0.15em;
-    padding: 0;
-    font-weight: normal;
-    text-shadow: 
-        3px 3px 0px #c6076d, 
-        4px 4px 0px #ffffff;
+  margin-top: -12pt;
 }
 
-nav ul,
-nav li {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
 nav ul {
-    margin-left: 300px;
+  padding-left: 0.5em;
+  background: white;
+  text-transform: uppercase;
+  font-family: 'Governor';
+  width: 960px;
+  margin: 0 auto 0 auto;
 }
+
 nav li {
-    border-bottom: dotted 1px #ffffff;
-    padding: 0.3em 0 0.3em 0;
-}
-nav li:last-child {
-    border-bottom: 0;
-}
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-}
-nav a:hover {
-    text-decoration: underline;
+  font-size: 17pt;
+  display: inline-block;
+  padding: 0.2em 0 0.1em 0;
+  margin-right: 0.1em;
+  color: grey;
+  border-bottom: 3px solid white;
 }
 
-.row {}
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+nav li:hover {
+  border-bottom: 3px solid red;
+  color: red;
+  cursor: pointer;
 }
 
-.slot, .separateur {
-    float: left;
-}
-.slot {
-    width: 306px;
-    height: 306px;
-    background: rgba(255, 255, 255, 0.5);
-    margin-right: 21px;
-    cursor: pointer;
-    padding: 2em;
-}
-.slot:last-child{
-    margin-right: 0;
-}
-.slot:only-child {
-    margin-left: 327px;
-}
-.separateur {
-    width: 21px;
-    height: 21px;
-    line-height: 21px;
-    color: rgba(255, 255, 255, 0.8);
-    margin-left: 306px;
-    text-align: center;
-    font-size: 21px;
+ul.nav2 {
+  display: inline-block;
+  margin-left: 2em;
+  margin-top: 5em;
 }
 
-.titre {
-    font-family: 'Governor';
-    font-size: 35pt;
-    font-weight: normal;
-    padding-top: 1.5em;
-/*     text-shadow: 
-    2px 2px 0px #c6076d, 
-    3px 3px 0px #ffffff; */
-    border-bottom: 8px solid white;
+ul.nav2 li {
+  font-family: 'Governor';
+  border-bottom: 4px solid black;
+  margin: 0 0 0.33em 0;
+  padding: 0.33em 0 0 0;
+  cursor: pointer;
 }
 
-.auteur {
-    text-transform: uppercase;
-    padding: 1em 0 0.3em 0;
+ul.nav2 li:hover,
+ul.nav2 li.current {
+  border-bottom: 4px solid red;
+  color: red;
 }
 
-.infos {
-    font-style: italic;
+.icon-left-circle,
+.icon-right-circle {
+  font-size: 60pt;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -40px;
+  color: black;
+}
+
+.icon-left-circle {
+  left: 0.5em;
+}
+
+.icon-right-circle {
+  right: 0.5em;
+}
+
+.icon-right-circle:hover,
+.icon-left-circle:hover {
+  color: red;
+}
+
+.legende {
+  /*  margin-left: -480px;
+   position: absolute;
+   bottom: 3%;
+   left: 50%; */
+  position: absolute;
+  left: 2em;
+  bottom: 2em;
+  /* right: 2em; */
+  padding: 0.67em;
+  background: black;
+  color: white;
+  display: inline-block;
+}
+
+.legende div.info {
+  display: inline-block;
+}
+
+.legende h2 {
+  font-family: 'Governor';
+  font-size: 18pt;
+  /*         background: black;
+          color: white; */
+  display: inline-block;
+}
+
+.legende p {
+  display: inline-block;
+  /*         background: black;
+          color: white; */
+  /*         padding: 0.67em 0.33em 0.67em 0.33em; */
+}
+
+.legende span.reserver {
+  border-radius: 4px;
+  padding: 0.33em 0.67em 0.33em 0.67em;
+  margin-top: 0.67em;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: -webkit-gradient(linear, top left, bottom left, from(#f9f9f9), to(#e9e9e9));
+  background: -webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+  background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+  background-color: #f9f9f9;
+  display: inline-block;
+  color: #222222;
+  font-weight: bold;
+  font-style: normal;
+  text-shadow: 1px 1px 0px #ffffff;
+  cursor: pointer;
+}
+
+.legende span.reserver:hover {
+  background: -webkit-gradient(linear, top left, bottom left, from(#e9e9e9), to(#f9f9f9));
+  background: -webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+  background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+  background-color: #e9e9e9;
+}
+
+.legende span.reserver:active {
+  position: relative;
+  top: 1px;
 }

@@ -1,0 +1,107 @@
+.font-title,
+ul.nav2 li,
+section.home h1,
+section.home h2 {
+  font-family: 'Governor';
+  text-transform: uppercase;
+}
+
+.font-body {
+  font-family: "VeraMono";
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  font-family: monospace;
+  font-size: 14pt;
+  background: url("travaux eleves/DSCF6493.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-width: 960px;
+}
+
+ul.nav2 {
+  display: inline-block;
+  margin-left: 2em;
+  margin-top: 5em;
+}
+
+ul.nav2 li {
+  border-bottom: 3px solid black;
+  margin: 0 0 0.33em 0;
+  padding: 0.33em 0 0 0;
+  cursor: pointer;
+}
+
+ul.nav2 li:hover,
+ul.nav2 li.current {
+  border-bottom: 3px solid red;
+  color: red;
+}
+
+section.home {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  margin: 2em 0 0 0;
+  padding: 2em 2em 2em 2em;
+  clear: both;
+}
+
+section.home h1 {
+  font-size: 100pt;
+  display: inline-block;
+  float: left;
+}
+
+section.home h1 div.line {
+  display: inline-block;
+  border-bottom: 16px solid white;
+  margin-bottom: 0.1em;
+}
+
+@media screen and (max-width: 1350px) {
+  section.home h2,
+  section.home p.intro {
+    clear: both;
+  }
+}
+
+@media screen and (min-width: 1351px) {
+  section.home p.intro,
+  section.home h2 {
+    margin-left: 750px;
+  }
+}
+
+section.home p.intro {
+  max-width: 500px;
+  text-align: justify;
+  padding-top: 0.67em;
+}
+
+section.home h2 {
+  background: white;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 18pt;
+  padding: 0.33em;
+  max-width: 500px;
+}
+
+section.home h2 span.no-governor {
+  font-size: 14pt;
+  font-family: monospace;
+  text-transform: capitalize;
+  color: black;
+}
+
+section.home:after {
+  display: block;
+  content: "";
+  clear: both;
+}

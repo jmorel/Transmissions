@@ -1,0 +1,114 @@
+$font-title: 'Futura LT';//'Governor';
+
+.font-title {
+    font-family: 'Governor';
+    text-transform: uppercase;
+}
+
+.font-body {
+    font-family: 'VeraMono'
+}
+
+* {
+    box-sizing: border-box;
+    position: relative;
+}
+
+body {
+    font-family: monospace;
+    font-size: 14pt;
+    background: url('travaux eleves/DSCF6493.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-width: 960px;
+}
+
+
+
+ul.nav2 {
+    display: inline-block;
+    margin-left: 2em;
+    margin-top: 5em;
+
+    li {
+        //font-family: $font-title;
+        @extend .font-title;
+        border-bottom: 3px solid black;
+        margin: 0 0 0.33em 0;
+        padding: 0.33em 0 0 0;
+        cursor: pointer;
+    }
+
+    li:hover,
+    li.current {
+        border-bottom: 3px solid red;
+        color: red;
+    }
+}
+
+section.home {
+    background: rgba(0,0,0, 0.6);
+    color: white;
+    margin: 2em 0 0 0;
+    padding: 2em 2em 2em 2em;
+    clear: both;
+
+    h1 {
+        //font-family: $font-title;
+        @extend .font-title;
+        font-size: 100pt;
+        display: inline-block;
+        float: left;
+
+        div.line {
+            display: inline-block;
+            border-bottom: 16px solid white;
+            margin-bottom: 0.1em;
+        }
+    }
+    
+    @media screen and (max-width: 1350px) {
+        h2,
+        p.intro {
+            clear: both;
+        }
+    }
+
+    @media screen and (min-width: 1351px) {
+        p.intro,
+        h2 {
+            margin-left: 750px;
+        }
+    }
+
+
+
+    p.intro {
+        max-width: 500px;
+        text-align: justify;
+        padding-top: 0.67em;
+        
+    }
+    h2 {
+        
+        background: white;
+        color: rgba(0,0,0,0.8);
+        //font-family: $font-title;
+        @extend .font-title;
+        font-size: 18pt;
+        padding: 0.33em;
+        max-width: 500px;
+
+        span.no-governor {
+            font-size: 14pt;
+            font-family: monospace;
+            text-transform: capitalize;
+            color: black;
+        }
+    }
+
+    &:after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
