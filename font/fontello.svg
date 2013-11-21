@@ -6,6 +6,10 @@
 <font id="fontello" horiz-adv-x="1000" >
 <font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
 <missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="th-list" unicode="&#xe802;" d="m1000 850v-160h-1000v160h1000z m0-280v-160h-1000v160h1000z m0-280v-160h-1000v160h1000z m0-280v-160h-1000v160h1000z" horiz-adv-x="1000" />
+<glyph glyph-name="cancel" unicode="&#xe805;" d="m654 349l346-346l-154-154l-346 346l-346-346l-154 154l346 346l-346 346l154 154l346-346l346 346l154-154z" horiz-adv-x="1000" />
+<glyph glyph-name="left-open" unicode="&#xe803;" d="m308 349l346-346l-154-154l-500 500l500 500l154-154z" horiz-adv-x="654" />
+<glyph glyph-name="right-open" unicode="&#xe804;" d="m154 849l500-500l-500-500l-154 154l346 346l-346 346z" horiz-adv-x="654" />
 <glyph glyph-name="left-circle" unicode="&#xe800;" d="m1000 349q0-136-67-251t-182-182t-251-67t-251 67t-182 182t-67 251t67 251t182 182t251 67t251-67t182-182t67-251z m-453-232l71 71l-161 161l161 161l-71 71l-233-232z" horiz-adv-x="1000" />
 <glyph glyph-name="right-circle" unicode="&#xe801;" d="m1000 349q0-136-67-251t-182-182t-251-67t-251 67t-182 182t-67 251t67 251t182 182t251 67t251-67t182-182t67-251z m-547-232l233 232l-233 232l-71-71l161-161l-161-161z" horiz-adv-x="1000" />
 </font>
