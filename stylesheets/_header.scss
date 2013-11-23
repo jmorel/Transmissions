@@ -1,0 +1,92 @@
+header {
+    background: url('../images/clean_textile.png');
+    box-shadow: 0px 0px 5px #333333;
+    color: $classy_blue;
+    
+    & > * {
+        width: 960px;
+        margin: 0 auto 0 auto;
+    }
+
+    h1 {
+        padding-top: 0.67em;
+        font-size: 60pt;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 20pt;
+        padding: 0 1em 0 1em;
+
+        &:before,
+        &:after {
+            content: "";
+            display: inline-block;
+            width: 130px;
+            border-top: 4px solid $classy_blue;
+            border-bottom: 2px solid $classy_blue;
+            height: 8px;
+            position: relative;
+            top: -4px;
+        }
+
+        &:before { right: 15px; }
+        &:after { left: 15px; }
+    }
+
+    p {
+        text-align: center;
+        padding: 0.67em 0 0.67em 0;
+    }
+    
+    ul {
+        text-align: center;
+        padding: 0.67em 0 1em 0;
+
+        li {
+            display: inline-block;
+        }
+
+        a {
+            display: inline-block;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 0.67em 0.67em 0.67em 0.67em;
+            text-decoration: none;
+            color: $classy_blue;
+
+        }
+        
+        a:hover,
+        a.current {
+            background: $classy_blue;
+            color: white;
+        }
+    }
+
+    &:before,
+    &:after {
+        content: "";  
+        display: block;  
+        width: 100%;  
+        position: absolute;  
+        bottom: 3px;
+    }
+
+    &:before {  
+        border-top: 1px dashed $classy_blue;  
+    }
+
+    &:after {  
+        border-top: 1px dashed rgba(255,255,255, .1);   
+        margin-top: 1px;  
+        margin-left: 1px;  
+    }  
+}
+
+

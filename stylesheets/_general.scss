@@ -1,0 +1,13 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    position: relative;
+}
+
+body {
+    font-family: 'Garamond';
+    font-size: 14pt;
+    color: $classy_blue;
+    text-align: center;
+}

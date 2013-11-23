@@ -1,6 +1,60 @@
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   position: relative;
 }
@@ -8,25 +62,19 @@
 body {
   font-family: 'Garamond';
   font-size: 14pt;
-  background: url("travaux eleves/DSCF6493.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  background-size: cover;
   color: #2b3e42;
   text-align: center;
 }
 
 header {
-  background: url("clean_textile.png");
-  -webkit-box-shadow: 0px 0px 5px #333333;
+  background: url("../images/clean_textile.png");
   box-shadow: 0px 0px 5px #333333;
   color: #2b3e42;
 }
-
 header > * {
   width: 960px;
   margin: 0 auto 0 auto;
 }
-
 header h1 {
   padding-top: 0.67em;
   font-size: 60pt;
@@ -34,7 +82,6 @@ header h1 {
   font-weight: bold;
   text-align: center;
 }
-
 header h2 {
   text-align: center;
   text-transform: uppercase;
@@ -42,71 +89,66 @@ header h2 {
   font-size: 20pt;
   padding: 0 1em 0 1em;
 }
-
-header h2:before,
-header h2:after {
+header h2:before, header h2:after {
   content: "";
   display: inline-block;
   width: 130px;
   border-top: 4px solid #2b3e42;
   border-bottom: 2px solid #2b3e42;
-  height: 2px;
+  height: 8px;
   position: relative;
   top: -4px;
 }
-
 header h2:before {
   right: 15px;
 }
-
 header h2:after {
   left: 15px;
 }
-
 header p {
   text-align: center;
   padding: 0.67em 0 0.67em 0;
 }
-
 header ul {
   text-align: center;
   padding: 0.67em 0 1em 0;
 }
-
 header ul li {
+  display: inline-block;
+}
+header ul a {
   display: inline-block;
   font-weight: bold;
   text-transform: uppercase;
   padding: 0.67em 0.67em 0.67em 0.67em;
-  cursor: pointer;
+  text-decoration: none;
+  color: #2b3e42;
 }
-
-header ul li:hover,
-header ul li.current {
+header ul a:hover,
+header ul a.current {
   background: #2b3e42;
   color: white;
 }
-
-header:before,
-header:after {
+header:before, header:after {
   content: "";
   display: block;
   width: 100%;
   position: absolute;
   bottom: 3px;
 }
-
 header:before {
   border-top: 1px dashed #2b3e42;
 }
-
 header:after {
   border-top: 1px dashed rgba(255, 255, 255, 0.1);
   margin-top: 1px;
   margin-left: 1px;
 }
 
-div.button-bg {
+section#objets {
+  display: none;
+}
+section#objets div.button-bg {
   display: inline-block;
   background: url("clean_textile.png");
   height: 100px;
@@ -115,15 +157,12 @@ div.button-bg {
   font-size: 30pt;
   text-align: center;
   line-height: 100px;
-  -webkit-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
   position: absolute;
   top: 50%;
   margin-top: -40px;
 }
-
-div.button-bg:before,
-div.button-bg:after {
+section#objets div.button-bg:before, section#objets div.button-bg:after {
   content: "";
   display: block;
   width: 92px;
@@ -133,44 +172,35 @@ div.button-bg:after {
   left: 3px;
   border-radius: 46px;
 }
-
-div.button-bg:before {
+section#objets div.button-bg:before {
   border: 1px dashed #2b3e42;
 }
-
-div.button-bg:after {
+section#objets div.button-bg:after {
   border: 1px dashed rgba(255, 255, 255, 0.1);
   margin-top: 1px;
   margin-left: 1px;
 }
-
-.left {
+section#objets .left {
   left: 0.5em;
 }
-
-.right {
+section#objets .right {
   right: 0.5em;
 }
-
-.legende {
+section#objets .legende {
   margin: 0 auto 0 auto;
   width: 100%;
   position: absolute;
   bottom: 1em;
   text-align: center;
 }
-
-.legende .ribbon {
+section#objets .legende .ribbon {
   display: inline-block;
   background: url("clean_textile.png");
   text-align: center;
-  -webkit-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
   min-width: 300px;
 }
-
-.legende .ribbon:before,
-.legende .ribbon:after {
+section#objets .legende .ribbon:before, section#objets .legende .ribbon:after {
   content: '';
   position: absolute;
   display: block;
@@ -178,27 +208,21 @@ div.button-bg:after {
   border: 35px solid #f8f8f8;
   z-index: -1;
 }
-
-.legende .ribbon:before {
+section#objets .legende .ribbon:before {
   left: -28px;
   border-right-width: 25px;
   border-left-width: 20px;
   border-left-color: transparent;
-  -webkit-box-shadow: 2px 2px 2px rgba(43, 62, 66, 0.4);
   box-shadow: 2px 2px 2px rgba(43, 62, 66, 0.4);
 }
-
-.legende .ribbon:after {
+section#objets .legende .ribbon:after {
   right: -28px;
   border-left-width: 25px;
   border-right-width: 20px;
   border-right-color: transparent;
-  -webkit-box-shadow: -2px 2px 2px rgba(43, 62, 66, 0.4);
   box-shadow: -2px 2px 2px rgba(43, 62, 66, 0.4);
 }
-
-.legende .ribbon .ribbon-content:before,
-.legende .ribbon .ribbon-content:after {
+section#objets .legende .ribbon .ribbon-content:before, section#objets .legende .ribbon .ribbon-content:after {
   border-color: #aaaaaa transparent transparent transparent;
   position: absolute;
   display: block;
@@ -206,23 +230,18 @@ div.button-bg:after {
   bottom: -18px;
   content: '';
 }
-
-.legende .ribbon .ribbon-content:before {
+section#objets .legende .ribbon .ribbon-content:before {
   left: 0;
   border-width: 18px 0 0 18px;
 }
-
-.legende .ribbon .ribbon-content:after {
+section#objets .legende .ribbon .ribbon-content:after {
   right: 0;
   border-width: 18px 18px 0 0;
 }
-
-.legende .ribbon .stitched {
+section#objets .legende .ribbon .stitched {
   padding: 0.67em 0 0.67em 0;
 }
-
-.legende .ribbon .stitched:before,
-.legende .ribbon .stitched:after {
+section#objets .legende .ribbon .stitched:before, section#objets .legende .ribbon .stitched:after {
   content: "";
   display: block;
   position: absolute;
@@ -231,50 +250,44 @@ div.button-bg:after {
   right: 3px;
   bottom: 3px;
 }
-
-.legende .ribbon .stitched:before {
+section#objets .legende .ribbon .stitched:before {
   border-top: 1px dashed #2b3e42;
   border-bottom: 1px dashed #2b3e42;
 }
-
-.legende .ribbon .stitched:after {
+section#objets .legende .ribbon .stitched:after {
   border-top: 1px dashed rgba(255, 255, 255, 0.1);
   border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
   margin-top: 1px;
   margin-left: 1px;
 }
-
-.legende .ribbon h1 {
+section#objets .legende .ribbon h1 {
   display: inline-block;
   padding: 0 0.67em 0 0.67em;
   font-size: 18pt;
   text-transform: uppercase;
   font-weight: bold;
 }
-
-.legende .ribbon h1:after {
+section#objets .legende .ribbon h1:after {
   display: block;
   content: "";
-  height: 2px;
+  height: 6px;
+  width: 90%;
+  position: relative;
+  left: 5%;
   border-bottom: 1px solid #2b3e42;
   border-top: 3px solid #2b3e42;
 }
-
-.legende .ribbon p {
+section#objets .legende .ribbon p {
   padding-top: 0.33em;
   text-transform: capitalize;
   font-size: 12pt;
 }
-
-.legende div.reserver {
+section#objets .legende div.reserver {
   text-transform: uppercase;
   border-radius: 4px;
   padding: 0.33em 0.67em 0.33em 0.67em;
   margin: 0.67em auto 0 auto;
-  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
   box-shadow: inset 0px 1px 0px 0px #ffffff;
-  background: -webkit-gradient(linear, top left, bottom left, from(white), to(#cccccc));
-  background: -webkit-linear-gradient(top, white 0%, #cccccc 100%);
   background: linear-gradient(to bottom, white 0%, #cccccc 100%);
   display: inline-block;
   font-weight: bold;
