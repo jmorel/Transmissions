@@ -1,27 +1,54 @@
 section#objets {
+    overflow: hidden;
 
-    display: none;
+    img {
+        /* Set rules to fill background */
+        min-height: 100%;
+        min-width: 1024px;
 
-    div.button-bg {
-        display: inline-block;
-        background: url('clean_textile.png');
-        height: 100px;
-        width: 100px;
-        border-radius: 50px;
-        font-size: 30pt;
-        text-align: center;
-        line-height: 100px;
-        box-shadow: 0px 0px 5px #333333;
+        /* Set up proportionate scaling */
+        width: 100%;
+        height: auto;
+
+        /* Set up positioning */
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -10;
+    }
+
+    a.button-bg {
+        /* Positioning */
         position: absolute;
         top: 50%;
         margin-top: -40px;
+
+        /* Display & Box Model */
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+
+        /* Other */
+        background: url('../images/clean_textile.png');  
+        font-size: 30pt;
+        text-align: center;
+        line-height: 100px;
+        box-shadow: 0px 0px 2px #333333;
+        text-decoration: none;
+        color: $classy_blue;
+
+        &:hover {
+            box-shadow: 0px 0px 5px #333333;
+        }
+        
 
         &:before,
         &:after {
             content: "";  
             display: block;  
-            width: 92px;
-            height: 92px;
+            width: 94px;
+            height: 94px;
             position: absolute;
             top: 3px;
             left: 3px;
@@ -38,15 +65,10 @@ section#objets {
             margin-left: 1px;  
         } 
 
-
+        &.previous { left: 0.5em; }
+        &.next { right: 0.5em; }
     }
-    .left {
-        left: 0.5em;
-    }
-
-    .right {
-        right: 0.5em;
-    }
+    
 
 
     .legende {
@@ -59,7 +81,7 @@ section#objets {
 
         .ribbon {
             display: inline-block;
-            background: url('clean_textile.png');
+            background: url('../images/clean_textile.png');
             text-align: center;
             box-shadow: 0px 0px 5px #333333;
             min-width: 300px;
@@ -165,18 +187,25 @@ section#objets {
             
         }
 
-        div.reserver {
-            text-transform: uppercase;
-
+        a.reserver {
+            /* Positioning */
+            display:inline-block;
+            /* Display & Box Model */
             border-radius: 4px;
             padding: 0.33em 0.67em 0.33em 0.67em;        
             margin: 0.67em auto 0 auto;
-            box-shadow:inset 0px 1px 0px 0px #ffffff;
+            /* Other */
+            text-transform: uppercase;
             background: linear-gradient( to bottom, #ffffff 0%, #cccccc 100%);
-            display:inline-block;
             font-weight:bold;
             text-shadow:1px 1px 0px #ffffff;
-            cursor: pointer;
+            text-decoration: none;
+            color: $classy_blue;
+            box-shadow: 0px 0px 2px #333333;
+
+            &:hover {
+                box-shadow: 0px 0px 5px #333333
+            }
         }
     }
 

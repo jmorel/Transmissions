@@ -6,8 +6,19 @@
 }
 
 body {
-    font-family: 'Garamond';
-    font-size: 14pt;
+    font-family: 'adobe-garamond-pro', serif;
+    font-size: 16pt;
     color: $classy_blue;
     text-align: center;
+    padding-bottom: 100%;
+    
+    &.fix-menu {
+    	padding-top: 0;
+    	header {
+	        position: fixed;
+	        top: 0;
+	        width: 100%;
+	        z-index: 1000;
+	    }
+	}
 }

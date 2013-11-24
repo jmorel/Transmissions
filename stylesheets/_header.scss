@@ -59,14 +59,24 @@ header {
             padding: 0.67em 0.67em 0.67em 0.67em;
             text-decoration: none;
             color: $classy_blue;
+            
+            transition-duration: 0.3s;
+            transition-property: background, color;
+
+            &:hover,
+            &.current {
+                background: $classy_blue;
+                color: white;
+
+            }
+
+            &.current {
+                
+            }
 
         }
         
-        a:hover,
-        a.current {
-            background: $classy_blue;
-            color: white;
-        }
+
     }
 
     &:before,
