@@ -298,21 +298,22 @@ section#objets .legende .ribbon h1 {
   font-size: 18pt;
   text-transform: uppercase;
   font-weight: bold;
-}
-section#objets .legende .ribbon h1:after {
-  display: block;
-  content: "";
-  height: 6px;
-  width: 90%;
-  position: relative;
-  left: 5%;
-  border-bottom: 1px solid #2b3e42;
-  border-top: 3px solid #2b3e42;
+  /*  &:after {
+       display: block;
+       content: "";
+       height: 6px;
+       width: 90%;
+       position: relative;
+       left: 5%;
+       border-bottom: 1px solid $classy_blue;
+       border-top: 3px solid $classy_blue;
+   } */
 }
 section#objets .legende .ribbon p {
   padding-top: 0.33em;
   text-transform: capitalize;
   font-size: 12pt;
+  font-style: italic;
 }
 section#objets .legende a.reserver {
   /* Positioning */

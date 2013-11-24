@@ -164,7 +164,7 @@ section#objets {
                 text-transform: uppercase;
                 font-weight: bold;
 
-                &:after {
+               /*  &:after {
                     display: block;
                     content: "";
                     height: 6px;
@@ -173,13 +173,14 @@ section#objets {
                     left: 5%;
                     border-bottom: 1px solid $classy_blue;
                     border-top: 3px solid $classy_blue;
-                }
+                } */
             }
 
             p {
                 padding-top: 0.33em;
                 text-transform: capitalize;
                 font-size: 12pt;
+                font-style: italic;
             }
 
             
