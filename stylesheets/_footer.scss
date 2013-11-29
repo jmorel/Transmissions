@@ -1,0 +1,27 @@
+footer {
+	background: $light_grey;
+	border-top: 1px solid $grey;
+	padding: 1em 0 1em 0;
+	text-align: left;
+	color: $grey_text;
+	font-size: 12pt;
+
+	& > div {
+		width: 960px;
+		margin: 0 auto 0 auto;
+
+		div.mentions-legales {
+			vertical-align: text-top;
+			display: inline-block;
+			margin: 0;
+		}
+
+		div.logos {
+			vertical-align: text-top;
+			display: inline-block;
+			margin-right: 3em;
+		}
+	}
+	
+
+}

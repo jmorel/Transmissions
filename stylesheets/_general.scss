@@ -10,7 +10,6 @@ body {
     font-size: 16pt;
     color: $classy_blue;
     text-align: center;
-    padding-bottom: 100%;
     
     &.fix-menu {
     	padding-top: 0;
@@ -21,4 +20,26 @@ body {
 	        z-index: 1000;
 	    }
 	}
+
+    p {
+        margin: 0.67em auto 0.67em auto;
+        line-height: 1.2em;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 20pt;
+        margin: 1.67em 0 0.67em 0;
+    }
+
+    h4 {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 1.67em 0 0.67em 0;
+    }
+
+    a {
+        color: $classy_blue;
+    }
 }
