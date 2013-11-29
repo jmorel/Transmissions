@@ -7,40 +7,40 @@
 /*(function() {*/
 
 	var objets = [
-			{ nom: 'AKTAS', prenom:'Gizem', type: 'T-Shirt', imgPath: 'images/objet-0.JPG', formURL: 'https://docs.google.com/forms/d/1QBVVabEdNzq4_preFGMPJYIMf_vhEMU60nyaZnATLdI/viewform?entry.1112689938=Gizem+AKTAS&entry.193397214&entry.796467299&entry.1892545024&entry.1136735145&entry.1655580496&entry.1884408055' },
-			{ nom: 'AUDOU', prenom:'Anais', type: 'Siège', imgPath: '', formURL: 'https://docs.google.com/forms/d/1QBVVabEdNzq4_preFGMPJYIMf_vhEMU60nyaZnATLdI/viewform?entry.1112689938=Anais+AUDOU&entry.193397214&entry.796467299&entry.1892545024&entry.1136735145&entry.1655580496&entry.1884408055' },
-			{ nom: 'CARMOIN', prenom:'Emeline', type: 'Marionnette', imgPath: '', formURL: 'https://docs.google.com/forms/d/1QBVVabEdNzq4_preFGMPJYIMf_vhEMU60nyaZnATLdI/viewform?entry.1112689938=Emeline+CARMOIN&entry.193397214&entry.796467299&entry.1892545024&entry.1136735145&entry.1655580496&entry.1884408055' },
-			{ nom: 'CAVALEIRO', prenom:'Anne-Caroline', type: 'Oreiller/Plaid', imgPath: '', formURL: '' },
-			{ nom: 'CHADEFFAUD', prenom:'Laetitia', type: 'Peluche', imgPath: '', formURL: '' },
-			{ nom: 'CHEVAUCHE', prenom:'Valentin', type: 'Verres', imgPath: '', formURL: '' },
-			{ nom: 'CONSTANT', prenom:'Océane', type: 'Assise nounours', imgPath: '', formURL: '' },
-			{ nom: 'DAIRE', prenom:'Florine', type: 'Rideaux', imgPath: '', formURL: '' },
-			{ nom: 'DURAND', prenom:'Marion', type: 'Pèle Mele', imgPath: '', formURL: '' },
-			{ nom: 'EVENO', prenom:'Flora', type: 'Tunique', imgPath: '', formURL: '' },
-			{ nom: 'EVERARD', prenom:'Maxime', type: 'Chaussons', imgPath: '', formURL: '' },
-			{ nom: 'GAMBIN', prenom:'Gatien', type: 'Peluche ', imgPath: '', formURL: '' },
-			{ nom: 'GOMES PINTO BARRETO', prenom:'Jessy', type: 'Luminaire', imgPath: '', formURL: '' },
-			{ nom: 'GUIDEZ', prenom:'Hélène', type: ' Sac femme', imgPath: '', formURL: '' },
-			{ nom: 'GUIGNABEL-PICARD', prenom:'Axelle	', type: 'Bijoux', imgPath: '', formURL: '' },
-			{ nom: 'LALLIOT', prenom:'Léa	', type: 'Bijoux', imgPath: '', formURL: '' },
-			{ nom: 'LEFEVRE', prenom:'Camille', type: 'Sièges', imgPath: '', formURL: '' },
-			{ nom: 'LOPEZ-UROZ', prenom:'Clara', type: 'Tablier trousseau', imgPath: '', formURL: '' },
-			{ nom: 'LORIN', prenom:'Loïse', type: 'Robe', imgPath: '', formURL: '' },
-			{ nom: 'MASSARD', prenom:'Aurélie', type: 'Oreillers', imgPath: '', formURL: '' },
-			{ nom: 'MELESSOUSSOU', prenom:'Chloé', type: 'Vase', imgPath: '', formURL: '' },
-			{ nom: 'MOSNIER', prenom:'Etienne', type: 'Luminaire', imgPath: '', formURL: '' },
-			{ nom: 'NIEL', prenom:'Eva', type: 'T-Shirt', imgPath: '', formURL: '' },
-			{ nom: 'PALACIOS', prenom:'Emilie', type: 'Luminaire ', imgPath: '', formURL: '' },
-			{ nom: 'PERRIGOT', prenom:'Camille', type: 'Accessoires textiles', imgPath: '', formURL: '' },
-			{ nom: 'PICCININ', prenom:'Floyd', type: 'Ornement façade', imgPath: '', formURL: '' },
-			{ nom: 'POINTEREAU', prenom:'Juliette', type: 'Luminaire', imgPath: '', formURL: '' },
-			{ nom: 'POTHIER', prenom:'Alexia', type: 'Peluche', imgPath: '', formURL: '' },
-			{ nom: 'RUIZ', prenom:'Pauline', type: 'Tissus', imgPath: '', formURL: '' },
-			{ nom: 'SAROT', prenom:'Marine', type: 'Sac femme', imgPath: '', formURL: '' },
-			{ nom: 'SELLIER', prenom:'Raphaël', type: ' Pèle Mele', imgPath: '', formURL: '' },
-			{ nom: 'SEUGE', prenom:'Julie', type: 'Bijoux', imgPath: '', formURL: '' },
-			{ nom: 'VILALARD', prenom:'Aurore', type: 'Robe/col', imgPath: '', formURL: '' },
-			{ nom: 'ZENNOUCHE', prenom:'Charlène', type: 'Peluche', imgPath: '', formURL: '' }
+			{ nom: 'AKTAS', prenom:'Gizem', type: 'T-Shirt', imgPath: 'images/objet-gizem.JPG', formURL: '' },
+			{ nom: 'AUDOU', prenom:'Anais', type: 'Siège', imgPath: 'images/objet-anais.JPG', formURL: '' },
+			{ nom: 'CARMOIN', prenom:'Emeline', type: 'Marionnette', imgPath: 'images/objet-emeline.JPG', formURL: '' },
+			{ nom: 'CAVALEIRO', prenom:'Anne-Caroline', type: 'Oreiller/Plaid', imgPath: 'images/objet-anne-caroline.JPG', formURL: '' },
+			{ nom: 'CHADEFFAUD', prenom:'Laetitia', type: 'Peluche', imgPath: 'images/objet-laetitia.JPG', formURL: '' },
+			{ nom: 'CHEVAUCHE', prenom:'Valentin', type: 'Verres', imgPath: 'images/objet-valentin.JPG', formURL: '' },
+			{ nom: 'CONSTANT', prenom:'Océane', type: 'Assise nounours', imgPath: 'images/objet-oceane.JPG', formURL: '' },
+			{ nom: 'DAIRE', prenom:'Florine', type: 'Rideaux', imgPath: 'images/objet-florine.JPG', formURL: '' },
+			{ nom: 'DURAND', prenom:'Marion', type: 'Pèle Mele', imgPath: 'images/objet-marion.JPG', formURL: '' },
+			{ nom: 'EVENO', prenom:'Flora', type: 'Tunique', imgPath: 'images/objet-flora.JPG', formURL: '' },
+			{ nom: 'EVERARD', prenom:'Maxime', type: 'Chaussons', imgPath: 'images/objet-maxime.JPG', formURL: '' },
+			{ nom: 'GAMBIN', prenom:'Gatien', type: 'Peluche ', imgPath: 'images/objet-gatien.JPG', formURL: '' },
+			{ nom: 'GOMES PINTO BARRETO', prenom:'Jessy', type: 'Luminaire', imgPath: 'images/objet-jessy.JPG', formURL: '' },
+			{ nom: 'GUIDEZ', prenom:'Hélène', type: ' Sac femme', imgPath: 'images/objet-helene.JPG', formURL: '' },
+			{ nom: 'GUIGNABEL-PICARD', prenom:'Axelle	', type: 'Bijoux', imgPath: 'images/objet-axelle.JPG', formURL: '' },
+			{ nom: 'LALLIOT', prenom:'Léa	', type: 'Bijoux', imgPath: 'images/objet-lea.JPG', formURL: '' },
+			{ nom: 'LEFEVRE', prenom:'Camille', type: 'Sièges', imgPath: 'images/objet-camille.JPG', formURL: '' },
+			{ nom: 'LOPEZ-UROZ', prenom:'Clara', type: 'Tablier trousseau', imgPath: 'images/objet-clara.JPG', formURL: '' },
+			{ nom: 'LORIN', prenom:'Loïse', type: 'Robe', imgPath: 'images/objet-loise.JPG', formURL: '' },
+			{ nom: 'MASSARD', prenom:'Aurélie', type: 'Oreillers', imgPath: 'images/objet-aurelie.JPG', formURL: '' },
+			{ nom: 'MELESSOUSSOU', prenom:'Chloé', type: 'Vase', imgPath: 'images/objet-chloe.JPG', formURL: '' },
+			{ nom: 'MOSNIER', prenom:'Etienne', type: 'Luminaire', imgPath: 'images/objet-etienne.JPG', formURL: '' },
+			{ nom: 'NIEL', prenom:'Eva', type: 'T-Shirt', imgPath: 'images/objet-eva.JPG', formURL: '' },
+			{ nom: 'PALACIOS', prenom:'Emilie', type: 'Luminaire ', imgPath: 'images/objet-emilie.JPG', formURL: '' },
+			{ nom: 'PERRIGOT', prenom:'Camille', type: 'Accessoires textiles', imgPath: 'images/objet-camille.JPG', formURL: '' },
+			{ nom: 'PICCININ', prenom:'Floyd', type: 'Ornement façade', imgPath: 'images/objet-floyd.JPG', formURL: '' },
+			{ nom: 'POINTEREAU', prenom:'Juliette', type: 'Luminaire', imgPath: 'images/objet-juliette.JPG', formURL: '' },
+			{ nom: 'POTHIER', prenom:'Alexia', type: 'Peluche', imgPath: 'images/objet-alexia.JPG', formURL: '' },
+			{ nom: 'RUIZ', prenom:'Pauline', type: 'Tissus', imgPath: 'images/objet-pauline.JPG', formURL: '' },
+			{ nom: 'SAROT', prenom:'Marine', type: 'Sac femme', imgPath: 'images/objet-marine.JPG', formURL: '' },
+			{ nom: 'SELLIER', prenom:'Raphaël', type: ' Pèle Mele', imgPath: 'images/objet-raphael.JPG', formURL: '' },
+			{ nom: 'SEUGE', prenom:'Julie', type: 'Bijoux', imgPath: 'images/objet-julie.JPG', formURL: '' },
+			{ nom: 'VILALARD', prenom:'Aurore', type: 'Robe/col', imgPath: 'images/objet-aurore.JPG', formURL: '' },
+			{ nom: 'ZENNOUCHE', prenom:'Charlène', type: 'Peluche', imgPath: 'images/objet-charlene.JPG', formURL: '' }
 		],
 		breakpoints = {
 			nav: document.querySelector('#nav').offsetTop,
@@ -132,6 +132,8 @@
 		//window.innerHeight = window.innerHeight;
 		nodes.objets.style.height = window.innerHeight + 'px';
 		refreshBreakpoints();
+		checkHash();
+		centerBackground();
 	}
 
 	function checkHash( evt ) {
@@ -145,7 +147,8 @@
 			for (var i = 0; i < objets.length; i++) {
 				if( objets[i].nom.toLowerCase() == hash ) {
 					// The hash does reference an object
-					window.scrollTo( window.scrollX, breakpoints.objets );
+					//refreshBreakpoints();
+					//window.scrollTo( window.scrollX, breakpoints.objets );
 					setCurrentObjet( i );
 					isObjetSet = true;
 				}
@@ -161,8 +164,13 @@
 		// change object displayed
 		nodes.background.src = objet.imgPath;
 		// update ribbon values
-		nodes.ribbon.nom.innerText = objet.prenom + ' ' + objet.nom;
-		nodes.ribbon.type.innerText = objet.type;
+		if( nodes.ribbon.nom.textContent ) {
+			nodes.ribbon.nom.textContent = objet.prenom + ' ' + objet.nom;
+			nodes.ribbon.type.textContent = objet.type;
+		} else {
+			nodes.ribbon.nom.innerText = objet.prenom + ' ' + objet.nom;
+			nodes.ribbon.type.innerText = objet.type;
+		}
 		// change next/previous links
 		if( i === 0 ) {
 			nodes.previous.href = '#' + objets[objets.length-1].nom;

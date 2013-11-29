@@ -1,9 +1,62 @@
 section#exposition {
-	width: 600px;
-	margin: 0 auto 0 auto;
+	width: 960px;
+	margin: 3em auto 3em auto;
+	text-align: left;
+	
+	& > div {
+		display: inline-block;
+		vertical-align: text-top;
+	
+	}
+	
+	div.expo {
+		width: 510px;
+		margin-right: 40px;
+
+		h3 {
+			line-height: 1.2em;
+		}
+
+		p {
+			text-align: justify;
+
+			&.headline {
+				font-size: 20pt;
+				margin-top: 0;
+				margin-bottom: 1.67em;
+				line-height: 1.2em;
+
+			}
+
+			img {
+				float: left;
+				margin-right: 1.33em;
+			}
+		}
+		
+		hr {
+			display: block;
+			width: 60%;
+			margin-left: auto;
+			margin-right: auto;
+			border-top: 1px solid $classy_blue_alpha;    
+			border-bottom: 1px solid rgba(255,255,255, .1);
+			border-left: 0;
+			border-right: 0;
+		}
+
+		li {
+			padding-left: 1.67em;
+			font-style: italic;
+		}
+	}
 
 	div.affiche {
 		box-shadow: 0px 0px 5px #333333;
+		width: 400px;
+		
+
+
 
 		&:before,
 	    &:after {

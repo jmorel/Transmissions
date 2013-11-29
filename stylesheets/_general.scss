@@ -10,6 +10,7 @@ body {
     font-size: 16pt;
     color: $classy_blue;
     text-align: center;
+    line-height: 1.2em;
     
     &.fix-menu {
     	padding-top: 0;
@@ -23,7 +24,7 @@ body {
 
     p {
         margin: 0.67em auto 0.67em auto;
-        line-height: 1.2em;
+        //line-height: 1.2em;
     }
 
     h3 {
@@ -41,5 +42,9 @@ body {
 
     a {
         color: $classy_blue;
+    }
+
+    strong {
+        font-weight: bold;
     }
 }

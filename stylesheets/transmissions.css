@@ -149,6 +149,7 @@ body {
   font-size: 16pt;
   color: #2b3e42;
   text-align: center;
+  line-height: 1.2em;
 }
 
 body.fix-menu {
@@ -164,7 +165,6 @@ body.fix-menu header {
 
 body p {
   margin: 0.67em auto 0.67em auto;
-  line-height: 1.2em;
 }
 
 body h3 {
@@ -184,6 +184,10 @@ body a {
   color: #2b3e42;
 }
 
+body strong {
+  font-weight: bold;
+}
+
 header {
   background: url("../images/clean_textile.png");
   -webkit-box-shadow: 0px 0px 5px #333333;
@@ -199,6 +203,7 @@ header > * {
 header h1 {
   padding-top: 0.67em;
   font-size: 60pt;
+  line-height: 1em;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
@@ -209,6 +214,7 @@ header h2 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 20pt;
+  line-height: 1em;
   padding: 0 1em 0 1em;
 }
 
@@ -465,6 +471,7 @@ section#objets .legende .ribbon p {
   text-transform: capitalize;
   font-size: 12pt;
   font-style: italic;
+  line-height: 1.2em;
 }
 
 section#objets .legende a.reserver {
@@ -507,13 +514,61 @@ section#partenariat p {
 }
 
 section#exposition {
-  width: 600px;
-  margin: 0 auto 0 auto;
+  width: 960px;
+  margin: 3em auto 3em auto;
+  text-align: left;
+}
+
+section#exposition > div {
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+section#exposition div.expo {
+  width: 510px;
+  margin-right: 40px;
+}
+
+section#exposition div.expo h3 {
+  line-height: 1.2em;
+}
+
+section#exposition div.expo p {
+  text-align: justify;
+}
+
+section#exposition div.expo p.headline {
+  font-size: 20pt;
+  margin-top: 0;
+  margin-bottom: 1.67em;
+  line-height: 1.2em;
+}
+
+section#exposition div.expo p img {
+  float: left;
+  margin-right: 1.33em;
+}
+
+section#exposition div.expo hr {
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid rgba(43, 62, 66, 0.25);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 0;
+  border-right: 0;
+}
+
+section#exposition div.expo li {
+  padding-left: 1.67em;
+  font-style: italic;
 }
 
 section#exposition div.affiche {
   -webkit-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
+  width: 400px;
 }
 
 section#exposition div.affiche:before,
