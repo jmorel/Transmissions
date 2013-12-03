@@ -568,7 +568,6 @@ section#exposition div.expo li {
 section#exposition div.affiche {
   -webkit-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
-  width: 400px;
 }
 
 section#exposition div.affiche:before,
