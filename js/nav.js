@@ -1,10 +1,4 @@
-/**
- * Breakpoints
- * ===========
- * 
- */
-
-/*(function() {*/
+(function() {
 
 	var objets = [
 			{ nom: 'AKTAS', prenom:'Gizem', type: 'T-Shirt', imgPath: 'images/objet-gizem.JPG', formURL: '' },
@@ -69,7 +63,7 @@
 			nav: document.querySelector('#nav').offsetTop,
 			exposition: document.querySelector('#exposition').offsetTop,
 			partenariat: document.querySelector('#partenariat').offsetTop,
-			objets: document.querySelector('#objets').offsetTop,
+			objets: document.querySelector('.objets').offsetTop,
 			infospratiques: document.querySelector('#infospratiques').offsetTop,
 		};
 	}
@@ -77,8 +71,6 @@
 	function scrolling(evt) {
 		
 		var y = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-
-		//console.log(y);
 
 		// MENU POSITION
 		if( y <= breakpoints.nav ) {
@@ -129,7 +121,6 @@
 	}
 
 	function resizing( evt ) {
-		//window.innerHeight = window.innerHeight;
 		nodes.objets.style.height = window.innerHeight + 'px';
 		refreshBreakpoints();
 		checkHash();
@@ -140,15 +131,13 @@
 		// Check hash for object reference
 		var hash = window.location.hash,
 			isObjetSet = false;
-		console.log( hash );
+
 		if( hash ) {
 			hash = hash.slice(1); // remove # character
 			hash = hash.toLowerCase();
 			for (var i = 0; i < objets.length; i++) {
 				if( objets[i].nom.toLowerCase() == hash ) {
 					// The hash does reference an object
-					//refreshBreakpoints();
-					//window.scrollTo( window.scrollX, breakpoints.objets );
 					setCurrentObjet( i );
 					isObjetSet = true;
 				}
@@ -171,6 +160,10 @@
 			nodes.ribbon.nom.innerText = objet.prenom + ' ' + objet.nom;
 			nodes.ribbon.type.innerText = objet.type;
 		}
+		// change link in menu
+		nodes.links[2].href = '#' + objets[i].nom;
+		// update section anchor
+		nodes.objets.id = objets[i].nom;
 		// change next/previous links
 		if( i === 0 ) {
 			nodes.previous.href = '#' + objets[objets.length-1].nom;
@@ -190,8 +183,7 @@
 		var containerHeight = parseInt( nodes.objets.style.height ),
 			imageHeight = nodes.background.height,
 			offset;
-		offset = ( containerHeight - imageHeight ) / 2;
-		console.log(offset);
+		offset = ( containerHeight - parseInt( nodes.header.style.top ) - imageHeight ) / 2;
 		nodes.background.style.top = offset + 'px';
 	}
 
@@ -206,11 +198,13 @@
 	resizing();
 	refreshBreakpoints();
 	scrolling();
+
 	window.addEventListener('scroll', scrolling);
 	window.addEventListener('resize', resizing);
 	window.addEventListener('hashchange', checkHash);
 	nodes.background.addEventListener('load', centerBackground);
 	nodes.reserver.addEventListener('click', loadForm);
+
 	checkHash();
-/*
-})();*/
+
+})();
