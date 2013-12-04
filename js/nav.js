@@ -18,8 +18,8 @@
 			{ nom: 'GUIGNABEL-PICARD', prenom:'Axelle	', type: 'Bijoux', imgPath: 'images/objet-axelle.jpg', formURL: '' },
 			{ nom: 'LALLIOT', prenom:'Léa	', type: 'Bijoux', imgPath: 'images/objet-lea.jpg', formURL: '' },
 			{ nom: 'LEFEVRE', prenom:'Camille', type: 'Sièges', imgPath: 'images/objet-camille.jpg', formURL: '' },
-			{ nom: 'LOPEZ-UROZ', prenom:'Clara', type: 'Tablier trousseau', imgPath: 'images/non-dispo.jpg', formURL: '' },
-			{ nom: 'LORIN', prenom:'Loïse', type: 'Robe', imgPath: 'images/objet-loise.jpg', formURL: '' },
+			{ nom: 'LOPEZ-UROZ', prenom:'Clara', type: 'Tablier trousseau', imgPath: 'images/objet-clara.jpg', formURL: '' },
+			{ nom: 'LORIN', prenom:'Loïse', type: 'Robe', imgPath: 'images/non-dispo.jpg', formURL: '' },
 			{ nom: 'MASSARD', prenom:'Aurélie', type: 'Oreillers', imgPath: 'images/objet-aurelie.jpg', formURL: '' },
 			{ nom: 'MELESSOUSSOU', prenom:'Chloé', type: 'Vase', imgPath: 'images/objet-chloe.jpg', formURL: '' },
 			{ nom: 'MOSNIER', prenom:'Etienne', type: 'Luminaire', imgPath: 'images/objet-etienne.jpg', formURL: '' },
@@ -184,6 +184,7 @@
 			imageHeight = nodes.background.height,
 			offset;
 		offset = ( containerHeight - parseInt( nodes.header.style.top ) - imageHeight ) / 2;
+		//offset = ( containerHeight - imageHeight )/2;
 		nodes.background.style.top = offset + 'px';
 	}
 

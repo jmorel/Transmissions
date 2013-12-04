@@ -78,7 +78,7 @@ section.objets {
         position: absolute;
         bottom: 1em;
         text-align: center;
-
+        
         .ribbon {
             display: inline-block;
             background: url('../images/clean_textile.png');
@@ -91,8 +91,8 @@ section.objets {
                content: '';
                position: absolute;
                display: block;
-               bottom: -18px;
-               border: 35px solid $ribbon_bg;
+               bottom: -10px;
+               border: 30px solid $ribbon_bg;
                z-index: -1;
             }
 
@@ -118,21 +118,21 @@ section.objets {
                     position: absolute;
                     display: block;
                     border-style: solid;
-                    bottom: -18px;
+                    bottom: -10px;
                     content: '';
                 }
                 &:before {
                     left: 0;
-                    border-width: 18px 0 0 18px;
+                    border-width: 10px 0 0 18px;
                 }
                 &:after {
                     right: 0;
-                    border-width: 18px 18px 0 0;
+                    border-width: 10px 18px 0 0;
                 }
             }
 
             .stitched {
-                padding: 0.67em 0 0.67em 0;
+                padding: 0.5em 0 0.5em 0;
                 &:before,
                 &:after {
                     content: "";  
@@ -159,26 +159,14 @@ section.objets {
 
             h1 {
                 display: inline-block;
-                padding: 0 0.67em 0 0.67em;
+                margin: 0;
                 font-size: 18pt;
                 text-transform: uppercase;
                 font-weight: bold;
-
-               /*  &:after {
-                    display: block;
-                    content: "";
-                    height: 6px;
-                    width: 90%;
-                    position: relative;
-                    left: 5%;
-                    border-bottom: 1px solid $classy_blue;
-                    border-top: 3px solid $classy_blue;
-                } */
             }
 
             p {
                 margin: 0;
-                padding-top: 0.33em;
                 text-transform: capitalize;
                 font-size: 12pt;
                 font-style: italic;
