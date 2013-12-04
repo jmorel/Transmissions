@@ -546,6 +546,8 @@ section#exposition div.expo p.headline {
 section#exposition div.expo p img {
   float: left;
   margin-right: 1.33em;
+  width: 133px;
+  height: 131px;
 }
 
 section#exposition div.expo hr {
@@ -567,6 +569,8 @@ section#exposition div.expo li {
 section#exposition div.affiche {
   -webkit-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
+  width: 400px;
+  height: 566px;
 }
 
 section#exposition div.affiche:before,
@@ -608,6 +612,11 @@ section#infospratiques h3 {
   padding-top: 75px;
   padding-bottom: 75px;
   margin: 0;
+}
+
+section#infospratiques h3 img {
+  width: 253px;
+  height: 130px;
 }
 
 section#infospratiques > div {
@@ -657,4 +666,9 @@ footer > div div.logos {
   vertical-align: text-top;
   display: inline-block;
   margin-right: 3em;
+}
+
+footer > div div.logos img {
+  width: 201px;
+  height: 191px;
 }
