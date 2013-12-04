@@ -55,7 +55,8 @@
 				type: document.querySelector('.ribbon p')
 			},
 			reserver: document.querySelector('.reserver'),
-			modalites: document.querySelector('#modalites')
+			modalites: document.querySelector('#modalites'),
+			loading: document.querySelector('.loading')
 		};
 		
 
@@ -151,8 +152,13 @@
 
 	function setCurrentObjet( i ) {
 		var objet = objets[i];
+
+		// display loading notification
+		nodes.loading.style.opacity = 1;
+
 		// change object displayed
 		nodes.background.src = objet.imgPath;
+
 		// update ribbon values
 		if( nodes.ribbon.nom.textContent ) {
 			nodes.ribbon.nom.textContent = objet.prenom + ' ' + objet.nom;
@@ -186,6 +192,7 @@
 			offset;
 		offset = ( containerHeight - parseInt( nodes.header.style.top ) - imageHeight ) / 2;
 		nodes.background.style.top = offset + 'px';
+		nodes.loading.style.opacity = 0;
 	}
 
 	function loadForm( evt ) {
