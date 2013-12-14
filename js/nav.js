@@ -198,7 +198,15 @@
 	function loadForm( evt ) {
 		evt.stopPropagation();
 		evt.preventDefault();
-		var popup = window.open(nodes.reserver.href, "_blank", "width=630, height=600");
+		var popup = window.open(nodes.reserver.href, "_blank", "width=630, height=600, scrollbars=yes, resizable=yes");
+		popup.focus();
+		return false;
+	}
+
+	function loadModalites( evt ) {
+		evt.stopPropagation();
+		evt.preventDefault();
+		var popup = window.open('reglement.html', "_blank", "width=1024, height=600, scrollbars=yes, resizable=yes");
 		popup.focus();
 		return false;
 	}
@@ -212,7 +220,7 @@
 	window.addEventListener('hashchange', checkHash);
 	nodes.background.addEventListener('load', centerBackground);
 	nodes.reserver.addEventListener('click', loadForm);
-	nodes.modalites.addEventListener('click', loadForm);
+	nodes.modalites.addEventListener('click', loadModalites);
 
 	checkHash();
 

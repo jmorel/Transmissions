@@ -50,6 +50,23 @@ section#exposition {
 		li {
 			padding-left: 1.67em;
 			font-style: italic;
+
+			div {
+				background-color: rgba(255,0,0,0.3);
+				border: 1px solid rgba(255,0,0,0.3);
+				padding: 0.33em;
+				margin-top: 0.33em;
+				font-style: normal;
+
+				span {
+					font-variant: small-caps;
+					font-weight: bold;
+				}
+			}
+
+			#modalites {
+				color: rgba(255,0,0, 0.8)
+			}
 		}
 	}
 
