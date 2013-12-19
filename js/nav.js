@@ -54,7 +54,7 @@
 				nom: document.querySelector('.ribbon h1'),
 				type: document.querySelector('.ribbon p')
 			},
-			reserver: document.querySelector('.reserver'),
+			//reserver: document.querySelector('.reserver'),
 			modalites: document.querySelector('#modalites'),
 			loading: document.querySelector('.loading')
 		};
@@ -183,7 +183,7 @@
 			nodes.next.href = '#' + objets[i+1].nom;
 		}
 		// change form link to default value for creator
-		nodes.reserver.href = objet.formURL;
+		//nodes.reserver.href = objet.formURL;
 	}
 
 	function centerBackground() {
@@ -219,7 +219,7 @@
 	window.addEventListener('resize', resizing);
 	window.addEventListener('hashchange', checkHash);
 	nodes.background.addEventListener('load', centerBackground);
-	nodes.reserver.addEventListener('click', loadForm);
+	//nodes.reserver.addEventListener('click', loadForm);
 	nodes.modalites.addEventListener('click', loadModalites);
 
 	checkHash();
